@@ -1,0 +1,48 @@
+#!/bin/bash
+
+#Colours
+green="\e[0;32m\033[1m"
+end="\033[0m\e[0m"
+red="\e[0;31m\033[1m"
+blue="\e[0;34m\033[1m"
+yellow="\e[0;33m\033[1m"
+purple="\e[0;35m\033[1m"
+turquesa="\e[0;36m\033[1m"
+gray="\e[0;37m\033[1m"
+cyan="\033[36;1m"
+clear
+W=$(id -nu)
+echo -e "$red Your user is:$end$green $W$end" ; ip=$(w3m -dump https://ipapi.co/ip); echo  -e "$red Your ip : "$yellow $ip
+country=$(w3m -dump https://ipapi.co/country);
+echo -e "$red Your country: "$yellow $country $end
+region=$(w3m -dump https://ipapi.co/region);
+echo -e "$red Your region: "$yellow $region $end
+city=$(w3m -dump https://ipapi.co/city);
+echo -e "$red Your city:"$yellow $city $end
+echo " "
+echo -e "$green        Team Hacksuki              "
+echo ""
+echo -e "$cyan       █ █▀█ █▄░█ █▀▀ ▀█▀        "$yellow Angel-Darkness"  "
+echo -e "$cyan       █ █▀▀ █░▀█ ██▄ ░█░          "
+echo ""
+echo -e "$red       Created By: ADNET             "
+echo ""
+echo -e "$red[*]$end$blue Enter your username : $end"
+echo ""
+read nombre
+echo ""
+echo -e "$red[*]$end$blue Checking user...$end$green\t[V]$end"
+sleep 2
+echo ""
+echo -e "$green[OK]$blue Verified user$end"
+echo ""
+echo -e "Hola$green $W $end el siguiente script es con uso educativo"
+echo "Cualquier uso sin el concentimiento de la victima"
+echo "No es nuestra responsalbilidad, script actualizado"
+echo "Su uso para geolocalizar direcciones ip..disfruta. "
+echo ""
+echo -e "$red	Usage : $cyan./iplocator.sh	"
+chmod +x iplocator.sh
+echo ""
+echo ""
+echo -e "$green © $red All rigths Reserved | Angel Darkness"
